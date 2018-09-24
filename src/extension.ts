@@ -3,8 +3,6 @@ import { exec } from 'child_process'
 
 export function activate(context: vscode.ExtensionContext) {
 
-	const config = vscode.workspace.getConfiguration('noreminette-42');
-
 	const errorsDecoration = vscode.window.createTextEditorDecorationType({
 		overviewRulerColor: 'red',
 		overviewRulerLane: vscode.OverviewRulerLane.Right,
@@ -38,9 +36,13 @@ export function activate(context: vscode.ExtensionContext) {
 	}
 
 	function updateDecorations() {
-		if (!activeEditor && activeEditor.document.languageId !== "c") {
+		if (!activeEditor || activeEditor.document.languageId !== "c") {
 			return
 		}
+
+		let regex = vscode.workspace.getConfiguration('norminette').get('fileregex') as string;
+		let pattern = RegExp(regex);
+		if(!activeEditor.document.uri.path.replace(/^.*[\\\/]/, '').match(pattern)) return;
 
 		const errors: vscode.DecorationOptions[] = []
 		runNorminetteProccess(activeEditor.document.uri.path)
@@ -63,12 +65,12 @@ export function activate(context: vscode.ExtensionContext) {
 	}
 
 	function runNorminetteProccess(filename: String) {
-		console.log(filename)
-		console.log(config);
+		console.log(filename);
+		let command = vscode.workspace.getConfiguration('norminette').get('command');
 		return new Promise((resolve, reject) => {
 			const line = []
 			const normDecrypted = []
-			const proc = exec('norminette ' + filename, function (error, stdout, stderr) {
+			const proc = exec(`${command} ${filename}`, function (error, stdout, stderr) {
 				stdout.split('\n').forEach((e, i) => {
 					if (i == 0)
 						return;
