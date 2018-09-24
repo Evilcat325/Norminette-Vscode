@@ -3,6 +3,8 @@ import { exec } from 'child_process'
 
 export function activate(context: vscode.ExtensionContext) {
 
+	const config = vscode.workspace.getConfiguration('noreminette-42');
+
 	const errorsDecoration = vscode.window.createTextEditorDecorationType({
 		overviewRulerColor: 'red',
 		overviewRulerLane: vscode.OverviewRulerLane.Right,
@@ -62,6 +64,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	function runNorminetteProccess(filename: String) {
 		console.log(filename)
+		console.log(config);
 		return new Promise((resolve, reject) => {
 			const line = []
 			const normDecrypted = []

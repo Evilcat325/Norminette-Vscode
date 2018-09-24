@@ -1,8 +1,8 @@
 {
-    "name": "morminette-check",
-    "description": "Simple norminette decorator for vscode",
-    "version": "2.0.0",
-    "publisher": "alexisvisco",
+    "name": "noreminette-42",
+    "description": "Norminette decorator for vscode with setting",
+    "version": "1.0.0",
+    "publisher": "Sen Li",
     "license": "MIT",
     "engines": {
         "vscode": "^1.6.0"
