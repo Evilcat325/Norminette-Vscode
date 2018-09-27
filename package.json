@@ -13,6 +13,7 @@
   "activationEvents": [
     "*"
   ],
+  "icon": "42_logo_black.png",
   "main": "./out/extension",
   "scripts": {
     "vscode:prepublish": "tsc -p ./",

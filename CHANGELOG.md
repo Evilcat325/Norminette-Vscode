@@ -1,3 +1,11 @@
+# 1.0.5
+
+- added logo `42` waiting for artstyle to finish
+
+# 1.0.4
+
+- added `LICENSE` file
+
 # 1.0.3
 
 - added helpful `vscode setting` for new user
