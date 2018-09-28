@@ -23,7 +23,7 @@
   "devDependencies": {
     "@types/node": "*",
     "typescript": "^2.9.2",
-    "vsce": "^1.49.2",
+    "vsce": "^1.51.0",
     "vscode": "^1.0.0"
   },
   "contributes": {
