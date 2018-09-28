@@ -15,6 +15,7 @@ Simple decorator for vscode user that use norminette command at 42/101 and injec
 - `fileregex` will default to only run on file start with "ft" end with ".c" or ".h"
 - `Regex` is using typescript/javascript synatax;
 - Currently rely on normiette.42.fr
+- `.h` file is not supported at the moment with updated later please use norminette in console.
 
 # Usefule VSCcde Setting
 ### to open vscode setting `⌘ + ,`

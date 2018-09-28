@@ -1,3 +1,7 @@
+# 1.0.7
+
+- added user warning that `.h` file is not supported at current version.
+
 # 1.0.6
 
 - default regex to `^ft.*\\.[ch]$`
