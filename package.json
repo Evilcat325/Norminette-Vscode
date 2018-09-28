@@ -11,7 +11,7 @@
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "onLanguage:c"
   ],
   "icon": "42_logo_black.png",
   "main": "./out/extension",
@@ -38,8 +38,8 @@
         },
         "norminette.fileregex": {
           "type": "string",
-          "default": "^ft.*\\.c$",
-          "description": "Specifies which c file to run norm \n default to ^ft.*\\.c$"
+          "default": "^ft.*\\.[ch]$",
+          "description": "Specifies which c file to run norm \n default to ^ft.*\\.[ch]$"
         }
       }
     }

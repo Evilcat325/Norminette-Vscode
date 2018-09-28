@@ -1,3 +1,8 @@
+# 1.0.6
+
+- default regex to `^ft.*\\.[ch]$`
+- change activationEvent to `onLanguage:c`
+
 # 1.0.5
 
 - added logo `42` waiting for artstyle to finish

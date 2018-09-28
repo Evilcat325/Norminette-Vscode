@@ -8,11 +8,11 @@ Simple decorator for vscode user that use norminette command at 42/101 and injec
 
 ```
 "norminette.command": "norminette -R CheckForbiddenSourceHeader",
-"norminette.fileregex": "^ft.*\\.c$",
+"norminette.fileregex": "^ft.*\\.[ch]$",
 ```
 
 - `command` will run as $command $filename
-- `fileregex` will default to only run on file start with "ft" end with ".c"
+- `fileregex` will default to only run on file start with "ft" end with ".c" or ".h"
 - `Regex` is using typescript/javascript synatax;
 - Currently rely on normiette.42.fr
 
