@@ -5,9 +5,9 @@ Simple decorator for vscode user that use norminette command at 42/101 and injec
 # Setting
 
 ## Default setting is
-
+#### use `norminette -R CheckForbiddenSourceHeader` day Piscine Day00-09
 ```
-"norminette.command": "norminette -R CheckForbiddenSourceHeader",
+"norminette.command": "norminette",
 "norminette.fileregex": "^ft.*\\.[ch]$",
 ```
 

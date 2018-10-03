@@ -33,8 +33,8 @@
       "properties": {
         "norminette.command": {
           "type": "string",
-          "default": "norminette -R CheckForbiddenSourceHeader",
-          "description": "Specifies norminette command example norminette -R CheckForbiddenSourceHeader. \n default to norminette"
+          "default": "norminette",
+          "description": "Specifies norminette command example norminette -R CheckForbiddenSourceHeader for Piscine Day00-09. \n default to norminette"
         },
         "norminette.fileregex": {
           "type": "string",

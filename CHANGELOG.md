@@ -1,3 +1,7 @@
+# 1.0.8
+
+- default command to `norminette`
+
 # 1.0.7
 
 - added user warning that `.h` file is not supported at current version.
