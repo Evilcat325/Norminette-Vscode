@@ -1,7 +1,7 @@
 {
   "name": "norminette-42",
   "description": "Norminette decorator for vscode with setting \n forked from alexis-visco.morminette-check ",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "publisher": "evilcat",
   "license": "MIT",
   "engines": {
